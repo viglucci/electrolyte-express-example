@@ -12,8 +12,7 @@ var IoC = require("electrolyte");
  */
 module.exports = function routes () {
 
-	var IndexController = IoC.create("controllers/IndexController");
-	
-	this.get("/", IndexController.handleIndex);
+	var IndexController = IoC.create("controller/IndexController");
+	this.get("/", IndexController.handleIndex.bind(IndexController));
 
 }

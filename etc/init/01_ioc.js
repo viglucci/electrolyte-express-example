@@ -16,7 +16,8 @@ var ioc = require("electrolyte");
  */
 module.exports = function() {
 
-	ioc.use("controllers", ioc.dir("app/controllers"));
-	ioc.use(ioc.dir("app/components"));
+	ioc.use("controller", ioc.dir("app/controller"));
+	ioc.use("service",    ioc.dir("app/lib/service"));
+	ioc.use("logger",     ioc.dir("app/lib/logger"));
 
 }
