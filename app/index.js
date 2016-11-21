@@ -4,6 +4,7 @@
 var http     = require("http");
 var express  = require("express");
 var bootable = require("bootable");
+var config   = require("config");
 
 /**
  * Initialize a bootable Express application.
@@ -21,7 +22,7 @@ app.phase(bootable.routes(__dirname + "/routes.js", app));
 
 // listen for HTTP requests
 app.phase(function listen (done) {
-	http.createServer(app).listen(3000, function(err) {
+	http.createServer(app).listen(config.port, function(err) {
 		if (err) { return done(err); }
 		
 		var addr = this.address();

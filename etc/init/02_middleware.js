@@ -6,7 +6,7 @@ var express = require('express');
 /**
  * Initialize middleware.
  */
-module.exports = function() {
+module.exports = function () {
   
 	this.use(express.urlencoded());
 	this.use(express.json());

@@ -1,9 +1,5 @@
 /**
  * This controller is used to handle requests to the index page.
- *
- * Parameters:
- *
- *   - `logger` logger for logging warnings, errors, etc.
  */
 exports = module.exports = function (loggerFactory, someService) {
 	var logger = loggerFactory.makeLogger("controller:IndexController");

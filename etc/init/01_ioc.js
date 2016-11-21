@@ -14,8 +14,9 @@ var ioc = require("electrolyte");
  * All other components (including database connections, logging facilities,
  * etc.) are located in `app/components`.
  */
-module.exports = function() {
+module.exports = function () {
 
+	ioc.use(ioc.node_modules());
 	ioc.use("controller", ioc.dir("app/controller"));
 	ioc.use("service",    ioc.dir("app/lib/service"));
 	ioc.use("logger",     ioc.dir("app/lib/logger"));

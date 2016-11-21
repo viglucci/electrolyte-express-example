@@ -9,6 +9,8 @@
     "ejs-locals": "1.x.x",
     "electrolyte": "*",
     "express": "3.x.x",
+    "extend": "^3.0.0",
+    "knex": "^0.12.6",
     "pug": "^2.0.0-beta6"
   },
   "scripts": {
@@ -16,9 +18,11 @@
   },
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-debug": "^3.0.0",
     "gulp-istanbul": "^1.1.1",
     "gulp-mocha": "^3.0.1",
     "require-dir": "^0.3.1",
-    "run-sequence": "^1.2.2"
+    "run-sequence": "^1.2.2",
+    "supertest": "^2.0.1"
   }
 }
